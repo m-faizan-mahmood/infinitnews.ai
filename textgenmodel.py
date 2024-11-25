@@ -18,7 +18,7 @@ logging.basicConfig(
 )
 
 # Set the API key as an environment variable
-os.environ["GROQ_API_KEY"] = "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"  # Replace with your actual API key
+os.environ["GROQ_API_KEY"] = "--"  # Replace with your actual API key
 
 # Initialize Groq client
 client = Groq()
