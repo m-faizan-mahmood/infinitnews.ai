@@ -24,9 +24,9 @@ os.environ["GROQ_API_KEY"] = "--"  # Replace with your actual API key
 client = Groq()
 
 # Paths
-DATASET_PATH = "/content/9ai_article_details.csv"
-OUTPUT_PATH = f"/content/output_900{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
-AUDIO_OUTPUT_DIR = "/content/audio_files/new/1audio_files"
+DATASET_PATH = "/content/infinitnews.ai/output/tribune_scraped_data/9ai_article_details.csv"
+OUTPUT_PATH = f"/content/infinitnews.ai/output/ai_gen_articles/output_900{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+AUDIO_OUTPUT_DIR = "/content/infinitnews.ai/output/audiooutput/1audio_files"
 
 # Ensure the audio output directory exists
 os.makedirs(AUDIO_OUTPUT_DIR, exist_ok=True)
