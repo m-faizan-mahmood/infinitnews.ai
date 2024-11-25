@@ -112,9 +112,9 @@ def continuously_fetch_data(base_url, input_csv, output_csv, processed_urls):
 processed_urls = set()
 
 
-# Path to input and output CSV files
-input_csv = "/content/drive/MyDrive/infinitnew_ai(2nd)/webscraping/9tribune_articlesauto.csv"  # CSV containing the URLs
-output_csv = "/content/drive/MyDrive/infinitnew_ai(2nd)/webscraping/9ai_article_details.csv"  # Output CSV for the detailed data
+# CSV file paths
+input_csv = "/content/infinitnews.ai/output/tribune_scraped_data/9tribune_articlesauto.csv"  # Input CSV path
+output_csv = "/content/infinitnews.ai/output/tribune_scraped_data/9ai_article_details.csv"  # Output CSV path
 
 # Start the article scraping and processing tasks in parallel using threading
 scraping_thread = threading.Thread(target=continuously_fetch_data, args=(base_url, input_csv, output_csv, processed_urls))
