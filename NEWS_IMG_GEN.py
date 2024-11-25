@@ -20,7 +20,7 @@ def query(payload):
         return None
 
 # Read the CSV file
-csv_path = "/content/output_90020241125_060001.csv"
+csv_path = "/content/infinitnews.ai/output/ai_gen_articles/output_90020241125_060001.csv"
 df = pd.read_csv(csv_path)
 
 # Check if the 'ai_gen_title' column exists
@@ -31,7 +31,7 @@ if 'gan_prompts' not in df.columns:
 titles = df['gan_prompts'].head(3)
 
 # Directory to save images
-output_dir = "/content/generated_images"
+output_dir = "/content/infinitnews.ai/output/img_output/generated_images"
 os.makedirs(output_dir, exist_ok=True)
 
 # Iterate over the first three titles and generate images
