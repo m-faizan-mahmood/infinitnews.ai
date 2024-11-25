@@ -7,7 +7,7 @@ import os
 # API Configuration
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-3.5-large-turbo"
 headers = {
-    "Authorization": "Bearer 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"  # Replace HF_TOKEN with your actual Hugging Face token
+    "Authorization": "Bearer HF_TOKEN"  # Replace HF_TOKEN with your actual Hugging Face token
 }
 
 # Function to query the API
